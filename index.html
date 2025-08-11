@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBA Class Routine</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Bengali and English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", "Noto Sans Bengali", sans-serif;
+      }
+      .active-cell {
+        background-color: #4ade80 !important; /* Tailwind's green-400 */
+        color: #1f2937; /* Tailwind's gray-800 */
+        font-weight: 700;
+        transform: scale(1.02);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        z-index: 10;
+      }
+      /* Custom styles to ensure the table is readable on small screens */
+      @media (max-width: 768px) {
+        table {
+          display: block;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100 p-4 sm:p-6 md:p-8">
+    <div class="flex-grow flex items-center justify-center p-0 md:p-4">
+      <div
+        class="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-10 w-full max-w-5xl"
+      >
+        <!-- Header -->
+        <header class="text-center mb-6 md:mb-8">
+          <a
+            href="https://mmcollege.edu.bd/"
+            target="_blank"
+            class="flex justify-center items-center mb-4"
+            ><img src="./img/dclogo.png" alt="" class="max-w-16 md:max-w-24"
+          /></a>
+          <h1
+            class="text-xl md:text-3xl font-extrabold text-gray-800 mb-1 leading-tight"
+          >
+            সরকারি এম. এম কলেজ
+          </h1>
+          <h2 class="text-lg md:text-2xl font-bold text-blue-600">
+            MBA Class Routine
+          </h2>
+        </header>
+
+        <!-- Routine Table -->
+        <div class="overflow-x-auto rounded-xl">
+          <table class="w-full table-auto border-separate border-spacing-2">
+            <thead>
+              <tr
+                class="bg-blue-600 text-white font-semibold text-sm md:text-base rounded-xl overflow-hidden"
+              >
+                <th class="p-3 text-left min-w-[120px]">Days<br />দিন</th>
+                <th class="p-3 min-w-[120px]">11:30 - 12:15</th>
+                <th class="p-3 min-w-[120px]">12:15 - 1:00</th>
+                <th class="p-3 min-w-[120px]">1:00 - 1:45</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Monday Row -->
+              <tr
+                id="row-Monday"
+                class="bg-yellow-50 hover:bg-yellow-100 transition duration-300 rounded-xl"
+              >
+                <td class="p-4 rounded-l-xl">
+                  <span class="font-semibold text-gray-700 text-sm">সোমবার</span
+                  ><br />
+                  <span class="text-xs font-medium text-gray-500">Monday</span>
+                </td>
+                <td id="Monday-11:30" class="p-4">
+                  <p class="font-bold text-sm">ATIAR RAHMAN</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Business Research
+                  </p>
+                </td>
+                <td id="Monday-12:15" class="p-4">
+                  <p class="font-bold text-sm">ABDUL JABBAR</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    International Business
+                  </p>
+                </td>
+                <td id="Monday-1:00" class="p-4 rounded-r-xl">
+                  <p class="font-bold text-sm">MD NAZMUL KABIR</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Strategic Management
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Wednesday Row -->
+              <tr
+                id="row-Wednesday"
+                class="bg-gray-50 hover:bg-gray-100 transition duration-300 rounded-xl"
+              >
+                <td class="p-4 rounded-l-xl">
+                  <span class="font-semibold text-gray-700 text-sm">বুধবার</span
+                  ><br />
+                  <span class="text-sm text-gray-500">Wednesday</span>
+                </td>
+                <td id="Wednesday-11:30" class="p-4">
+                  <p class="font-bold text-sm">ZAHIR UDDIN</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Business Research
+                  </p>
+                </td>
+                <td id="Wednesday-12:15" class="p-4">
+                  <p class="font-bold text-sm">ROKUNUZZAMAN</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Management Information
+                  </p>
+                </td>
+                <td id="Wednesday-1:00" class="p-4 rounded-r-xl">
+                  <p class="font-bold text-sm">FARZANA ISLAM</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Compensation Management
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Thursday Row -->
+              <tr
+                id="row-Thursday"
+                class="bg-fuchsia-50 hover:bg-fuchsia-100 transition duration-300 rounded-xl"
+              >
+                <td class="p-4 rounded-l-xl">
+                  <span class="font-semibold text-gray-700 text-sm"
+                    >বৃহস্পতিবার</span
+                  ><br />
+                  <span class="text-sm text-gray-500">Thursday</span>
+                </td>
+                <td id="Thursday-11:30" class="p-4">
+                  <p class="font-bold text-sm">ESRAFIL HOSSAIN</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Management Thoughts
+                  </p>
+                </td>
+                <td id="Thursday-12:15" class="p-4">
+                  <p class="font-bold text-sm">NURZAHAN KHATUN</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Training and Development
+                  </p>
+                </td>
+                <td id="Thursday-1:00" class="p-4 rounded-r-xl">
+                  <p class="font-bold text-sm">SHIRIN AKTER</p>
+                  <p class="text-sm font-medium text-gray-500 mt-1">
+                    Management Thought
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto text-center text-gray-500 text-sm p-4">
+      <p><span id="copyright-year"></span> Created by gmsakibur</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Function to update the active cell
+        function updateActiveCell() {
+          const now = new Date();
+          const dayOfWeek = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+          const currentHour = now.getHours();
+          const currentMinute = now.getMinutes();
+
+          // Remove existing active classes
+          document.querySelectorAll(".active-cell").forEach((cell) => {
+            cell.classList.remove("active-cell");
+          });
+
+          let dayName;
+          switch (dayOfWeek) {
+            case 1:
+              dayName = "Monday";
+              break;
+            case 3:
+              dayName = "Wednesday";
+              break;
+            case 4:
+              dayName = "Thursday";
+              break;
+            default:
+              return; // No class on other days
+          }
+
+          let timeSlotId;
+          // Convert current time to a single minute value for easier comparison
+          const totalMinutes = currentHour * 60 + currentMinute;
+
+          // Time slots in total minutes from midnight
+          const timeSlots = {
+            "11:30": 11 * 60 + 30, // 690
+            "12:15": 12 * 60 + 15, // 735
+            "1:00": 13 * 60 + 0, // 780
+            "1:45": 13 * 60 + 45, // 825
+          };
+
+          if (
+            totalMinutes >= timeSlots["11:30"] &&
+            totalMinutes < timeSlots["12:15"]
+          ) {
+            timeSlotId = "11:30";
+          } else if (
+            totalMinutes >= timeSlots["12:15"] &&
+            totalMinutes < timeSlots["1:00"]
+          ) {
+            timeSlotId = "12:15";
+          } else if (
+            totalMinutes >= timeSlots["1:00"] &&
+            totalMinutes < timeSlots["1:45"]
+          ) {
+            timeSlotId = "1:00";
+          }
+
+          // If a time slot is active, find the corresponding cell and add the active class
+          if (dayName && timeSlotId) {
+            const activeCellId = `${dayName}-${timeSlotId}`;
+            const activeCell = document.getElementById(activeCellId);
+            if (activeCell) {
+              activeCell.classList.add("active-cell");
+            }
+          }
+        }
+
+        // Run the function on page load
+        updateActiveCell();
+        // Update every minute
+        setInterval(updateActiveCell, 60000);
+
+        // Add a dynamic copyright year
+        document.getElementById(
+          "copyright-year"
+        ).textContent = `© ${new Date().getFullYear()}`;
+      });
+    </script>
+  </body>
+</html>
